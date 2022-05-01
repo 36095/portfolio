@@ -4,6 +4,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
 }
 
 section {
@@ -70,7 +84,6 @@ header {
 header.sticky {
     background: #fff;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -142,4 +155,91 @@ header.sticky ul li a {
     max-width: 100%;
     height: auto;
     border-radius: 0.8em;
+}
+
+.services {
+    background: #111;
+}
+
+.heading.white {
+    color: #fff;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesBx {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 0.8em;
+}
+
+.services .content .servicesBx:hover {
+    transform: scale(1.05);
+    background: #2196f3;
+    cursor: default;
+}
+
+.services .content .servicesBx img {
+    max-width: 80px;
+}
+
+.services .content .servicesBx h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.work .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work .content .workBx {
+    /* max-width: 500px; */
+    width: 45%;
+    /* height: 100%; */
+    padding: 20px;
+    background: #f2f2f2;
+    color: #fff;
+    /* max-width: 340px; */
+    margin: 20px 20px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 0.8em;
+}
+
+.work .content .workBx:hover {
+    transform: scale(1.05);
+    background: #2196f3;
+    cursor: default;
+}
+
+.work .content .workBx img {
+    max-width: 100%;
+    width: 80%;
+    /* height: 100%; */
+}
+
+
+/* Footer */
+
+footer {
+    position: relative;
+    background: #111;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
 }

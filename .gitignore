@@ -1,2 +1,8 @@
 .vscode
 *.env
+*.svg
+*.woff
+*.woff2
+*.zip
+*.7z
+*.rar
