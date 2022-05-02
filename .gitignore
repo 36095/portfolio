@@ -1,6 +1,6 @@
 .vscode
 *.env
-*.svg
+# *.svg
 *.woff
 *.woff2
 *.zip
